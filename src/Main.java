@@ -1,8 +1,4 @@
-
-
 public class Main {
-
-
     static int ersteZahl = 10;
     static int zweiteZahl = 4;
 
