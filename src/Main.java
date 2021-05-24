@@ -1,8 +1,17 @@
+import java.awt.geom.Point2D;
+
 public class Main {
-    static int ersteZahl = 10;
-    static int zweiteZahl;
+
+    int ersteZahl = 10;
+    int zweiteZahl = 0;
 
     public static void main(String[] args) {
+        Main main = new Main();
+        main.start();
+
+    }
+
+    public void start(){
         Rechner rechner = new Rechner();
         Rechner2 rechner2 = new Rechner2();
 
@@ -35,6 +44,22 @@ public class Main {
         rechner.multiplitzieren(ersteZahl, zweiteZahl);
         rechner.dividieren(ersteZahl, zweiteZahl);
         rechner.modulo(ersteZahl, zweiteZahl);
+
+        Punkt punkt1 = new Punkt();
+        punkt1.setX(10);
+        punkt1.setY(20);
+
+        Punkt punkt2 = new Punkt();
+        punkt2.setX(3);
+        punkt2.setY(5);
+
+        Punkt punkt3 = new Punkt();
+        punkt3.setX(331);
+        punkt3.setY(52);
+        punkt1.setY(-10);
+
+        punkt1.print();
+        punkt2.print();
     }
 }
 
